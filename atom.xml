@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ulpaq8.coding-pages.com</id>
     <title>xrz-blog</title>
-    <updated>2020-04-21T12:31:58.828Z</updated>
+    <updated>2020-07-25T15:13:13.175Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ulpaq8.coding-pages.com"/>
     <link rel="self" href="https://ulpaq8.coding-pages.com/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://ulpaq8.coding-pages.com/images/avatar.png</logo>
     <icon>https://ulpaq8.coding-pages.com/favicon.ico</icon>
     <rights>All rights reserved 2020, xrz-blog</rights>
+    <entry>
+        <title type="html"><![CDATA[XTC高版本root方法]]></title>
+        <id>https://ulpaq8.coding-pages.com/post/xtc-gao-ban-ben-root/</id>
+        <link href="https://ulpaq8.coding-pages.com/post/xtc-gao-ban-ben-root/">
+        </link>
+        <updated>2020-07-25T14:38:53.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="刷机有风险玩机需谨慎-如果变砖作者概不负责-条件聪明的脑子-灵活的双手-刷过sboot">刷机有风险，玩机需谨慎。如果变砖作者概不负责。<br>
+条件：聪明的脑子、灵活的双手、刷过sboot。</h2>
+<p>提取固件（已有固件可忽略）<br>
+1、（移除root，升级至最新固件）<br>
+2、连接电脑，打开QFIL，9008模式提取system分区（和userdata分区）<br>
+正式开工<br>
+3、进9008，回到可刷sboot的版本，刷入sboot.img和recovery.img（群文件）（和备份的       userdata.bin）<br>
+(4、回到系统，输入<code>adb reboot recovery</code>确认能进入rec)<br>
+5、9008刷之前提取的system.bin<br>
+6、开机查看：新系统和magisk都在</p>
+<p>tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://ulpaq8.coding-pages.com/post/hello-gridea/</id>
