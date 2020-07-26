@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ulpaq8.coding-pages.com</id>
     <title>xrz-blog</title>
-    <updated>2020-07-25T15:13:13.175Z</updated>
+    <updated>2020-07-26T13:42:10.845Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ulpaq8.coding-pages.com"/>
     <link rel="self" href="https://ulpaq8.coding-pages.com/atom.xml"/>
@@ -11,22 +11,53 @@
     <icon>https://ulpaq8.coding-pages.com/favicon.ico</icon>
     <rights>All rights reserved 2020, xrz-blog</rights>
     <entry>
-        <title type="html"><![CDATA[XTC高版本root方法]]></title>
-        <id>https://ulpaq8.coding-pages.com/post/xtc-gao-ban-ben-root/</id>
-        <link href="https://ulpaq8.coding-pages.com/post/xtc-gao-ban-ben-root/">
+        <title type="html"><![CDATA[可能出现的意外及解决方法（建议看完全部再开始）]]></title>
+        <id>https://ulpaq8.coding-pages.com/post/xtcuproot-Q&amp;A/</id>
+        <link href="https://ulpaq8.coding-pages.com/post/xtcuproot-Q&amp;A/">
+        </link>
+        <updated>2020-07-26T13:01:53.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>开机后掉root了<br>
+1、输入<code>adb reboot recovery</code>进入rec<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595768120423.jpg" alt="" loading="lazy"><br>
+2、点击   Install<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595768363476.jpg" alt="" loading="lazy"><br>
+接下来有两种方法<br>
+方法1<br>
+3-1-1、（需提前把<a href="https://xrzyun.coding.net/s/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">magisk[下载]</a>导入/sdcard/）点击Install Zip<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595768843955.jpg" alt="" loading="lazy"><br>
+3-1-2、在列表中找到magisk的zip，点击滑动刷入，跑完之后，重启手表，成功</p>
+<p>方法2<br>
+3-2-1、（需连接手表）点击ADB Sideload<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595769105481.jpg" alt="" loading="lazy"><br>
+3-2-2、滑动开启此模式<br>
+3-2-3、连接手表，打开<a href="https://lsdy.lanzous.com/b0bwa7gif">搞机助手[下载]</a><br>
+3-2-4、连接成功，点击 恢复模式<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595769582615.PNG" alt="" loading="lazy"><br>
+3-2-5、点击Sideload 刷机模式<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595769705318.PNG" alt="" loading="lazy"><br>
+3-2-6、选择刷机包，<a href="https://xrzyun.coding.net/s/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">magisk的zip[下载]</a>，开始刷机，跑完之后，重启手表，成功<br>
+<img src="https://ulpaq8.coding-pages.com/post-images/1595770169698.PNG" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XTC任意版本root方法（更新中）]]></title>
+        <id>https://ulpaq8.coding-pages.com/post/xtcuproot/</id>
+        <link href="https://ulpaq8.coding-pages.com/post/xtcuproot/">
         </link>
         <updated>2020-07-25T14:38:53.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="刷机有风险玩机需谨慎-如果变砖作者概不负责-条件聪明的脑子-灵活的双手-刷过sboot">刷机有风险，玩机需谨慎。如果变砖作者概不负责。<br>
-条件：聪明的脑子、灵活的双手、刷过sboot。</h2>
+        <content type="html"><![CDATA[<h2 id="刷机有风险玩机需谨慎-如果变砖作者概不负责-条件聪明的脑子-灵活的双手-会用qfila-hrefhttpswearandmecom8888qfile588b7e69cbae5b7a5e585b7qfile588b7e69cbae5b7a5e585b77z下载aa-hrefhttpswwwbaiducomsieutf-8f8rsv_bp1tnbaiduwdqfile69599e7a88b教程a-刷过sboota-hrefhttpscoding-net-production-file-1257242599cosap-shanghaimyqcloudcom2c8adea0-cf3b-11ea-abb4-3ba29736327bzipsignq-sign-algorithm3dsha126q-ak3dakiday83lfmas6y4ltdzmvo1sdzoyjsnoypr26q-sign-time3d15957664163b159577001626q-key-time3d15957664163b159577001626q-header-list3d26q-url-param-list3dresponse-content-disposition3bresponse-expires26q-signature3d80b6cd415e05cc18bd401cb365ccb7f0da15fb71response-content-dispositionattachment3bfilename3dxtc-sboot-rv15zipresponse-expireswed2c202920jul20202020003a263a5620gmt下载a">刷机有风险，玩机需谨慎。如果变砖作者概不负责。<br>
+条件：聪明的脑子、灵活的双手、会用QFIL<a href="https://wearandme.com:8888/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.7z">[下载]</a><a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=QFIL%E6%95%99%E7%A8%8B">[教程]</a>、刷过sboot<a href="https://coding-net-production-file-1257242599.cos.ap-shanghai.myqcloud.com/2c8adea0-cf3b-11ea-abb4-3ba29736327b.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDay83lFmaS6Y4LTdzMVO1SdZOyJSNOYpr%26q-sign-time%3D1595766416%3B1595770016%26q-key-time%3D1595766416%3B1595770016%26q-header-list%3D%26q-url-param-list%3Dresponse-content-disposition%3Bresponse-expires%26q-signature%3D80b6cd415e05cc18bd401cb365ccb7f0da15fb71&response-content-disposition=attachment%3Bfilename%3DXTC-SBoot-RV1.5.zip&response-expires=Wed%2C%2029%20Jul%202020%2000%3A26%3A56%20GMT">[下载]</a>。</h2>
 <p>提取固件（已有固件可忽略）<br>
 1、（移除root，升级至最新固件）<br>
-2、连接电脑，打开QFIL，9008模式提取system分区（和userdata分区）<br>
-正式开工<br>
-3、进9008，回到可刷sboot的版本，刷入sboot.img和recovery.img（群文件）（和备份的       userdata.bin）<br>
+2、连接电脑，打开QFIL，9008模式提取system分区（和userdata分区）<a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=QFIL%E6%8F%90%E5%8F%96%E5%88%86%E5%8C%BA">[提取方法]</a></p>
+<p>正式开工<br>
+3、进9008，回到可刷sboot的版本，刷入sboot.img和recovery.img<a href="https://xrzyun.coding.net/s/4661641d-9490-4dac-aeda-f488e7f1ef44">[下载]</a>（和备份的       userdata.bin）[不会刷看教程]<br>
 (4、回到系统，输入<code>adb reboot recovery</code>确认能进入rec)<br>
 5、9008刷之前提取的system.bin<br>
 6、开机查看：新系统和magisk都在</p>
-<p>tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
+<p><a href="/post/xtcuproot-Q&A/">可能出现的意外及解决方法</a><br>
+tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
 ]]></content>
     </entry>
     <entry>
