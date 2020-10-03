@@ -2,18 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xrzyun.top</id>
     <title>xrz-blog</title>
-    <updated>2020-10-03T15:19:43.305Z</updated>
+    <updated>2020-10-03T15:41:19.656Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xrzyun.top"/>
     <link rel="self" href="https://blog.xrzyun.top/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>&lt;!-- 请注意，以下的示例包含超链接，您可能需要手动配置样式使其不变色。如果您嫌麻烦，可以移除。 --&gt;
+&lt;p id=&quot;hitokoto&quot;&gt;&lt;a href=&quot;#&quot; id=&quot;hitokoto_text&quot;&gt;:D 获取中...&lt;/a&gt;&lt;/p&gt;
+&lt;!-- 以下写法，选取一种即可 --&gt;
+
+&lt;!-- 现代写法，推荐(不支持 IE) --&gt;
+&lt;script&gt;
+  fetch(&apos;https://v1.hitokoto.cn/?c=a&amp;b&amp;c&apos;)
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      const hitokoto = document.getElementById(&apos;hitokoto_text&apos;)
+      hitokoto.href = &apos;https://hitokoto.cn/?uuid=&apos; + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+&lt;/script&gt;</subtitle>
     <logo>https://blog.xrzyun.top/images/avatar.png</logo>
     <icon>https://blog.xrzyun.top/favicon.ico</icon>
     <rights>All rights reserved 2020, xrz-blog</rights>
     <entry>
         <title type="html"><![CDATA[XTC任意版本root方法]]></title>
-        <id>https://blog.xrzyun.top/post/xtc-root/</id>
-        <link href="https://blog.xrzyun.top/post/xtc-root/">
+        <id>https://blog.xrzyun.top/xtc-root/</id>
+        <link href="https://blog.xrzyun.top/xtc-root/">
         </link>
         <updated>2020-10-03T12:30:30.000Z</updated>
         <content type="html"><![CDATA[<p><strong>刷机有风险，玩机需谨慎。如果变砖作者概不负责。</strong></p>
@@ -46,8 +60,8 @@ tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[可能出现的意外及解决方法（建议看完全部再开始）]]></title>
-        <id>https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/</id>
-        <link href="https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/">
+        <id>https://blog.xrzyun.top/xtcuproot-Q&amp;A/</id>
+        <link href="https://blog.xrzyun.top/xtcuproot-Q&amp;A/">
         </link>
         <updated>2020-07-26T13:01:53.000Z</updated>
         <content type="html"><![CDATA[<h1 id="开机后掉root了">开机后掉root了</h1>
@@ -79,8 +93,8 @@ tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.xrzyun.top/post/hello-gridea/</id>
-        <link href="https://blog.xrzyun.top/post/hello-gridea/">
+        <id>https://blog.xrzyun.top/hello-gridea/</id>
+        <link href="https://blog.xrzyun.top/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
