@@ -2,23 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>可能出现的意外及解决方法（建议看完全部再开始） | xrz-blog</title>
+<title>XTC任意版本root方法 | xrz-blog</title>
 <link rel="shortcut icon" href="https://blog.xrzyun.top/favicon.ico?v=1601738094496">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.xrzyun.top/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="可能出现的意外及解决方法（建议看完全部再开始） | xrz-blog - Atom Feed" href="https://blog.xrzyun.top/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="XTC任意版本root方法 | xrz-blog - Atom Feed" href="https://blog.xrzyun.top/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="开机后掉root了
-方法1 方法2
-方法1
-1、输入adb reboot recovery进入rec
-
-2、点击   Install
-
-3、（需提前把Magisk-20.4(20400).zip导入/sdcard/）点击Install Zi..." />
+    <meta name="description" content="刷机有风险，玩机需谨慎。如果变砖作者概不负责。
+条件
+聪明的脑子、灵活的双手、会用QFIL[下载][教程]、刷过sboot[下载]。
+提取固件（已有固件可忽略）
+1、（移除root，升级至最新固件）
+2、连接电脑，打开QFIL，9008模式..." />
     <meta name="keywords" content="技术,XTC,刷机" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -87,11 +85,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              可能出现的意外及解决方法（建议看完全部再开始）
+              XTC任意版本root方法
             </h2>
             <div class="post-info">
               <span>
-                2020-07-26
+                2020-10-03
               </span>
               <span>
                 1 min read
@@ -113,39 +111,43 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="开机后掉root了">开机后掉root了</h1>
-<p><a href="#%E6%96%B9%E6%B3%951">方法1</a> <a href="#%E6%96%B9%E6%B3%952">方法2</a></p>
-<h2 id="方法1">方法1</h2>
-<p>1、输入<code>adb reboot recovery</code>进入rec<br>
-<img src="//cdn.xrzyun.top/img/gridea_1.jpg" width="25%"><br>
-2、点击   Install<br>
-<img src="//cdn.xrzyun.top/img/gridea_2.jpg" width="25%"><br>
-3、（需提前把<a href="https://xrzyun.coding.net/api/share/download/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">Magisk-20.4(20400).zip</a>导入/sdcard/）点击Install Zip<br>
-<img src="//cdn.xrzyun.top/img/gridea_3.jpg" width="25%"><br>
-4、在列表中找到magisk的zip，点击滑动刷入，跑完之后，重启手表，成功</p>
-<h2 id="方法2">方法2</h2>
-<p>1、输入<code>adb reboot recovery</code>进入rec<br>
-<img src="//cdn.xrzyun.top/img/gridea_1.jpg" width="25%"><br>
-2、点击   Install<br>
-<img src="//cdn.xrzyun.top/img/gridea_2.jpg" width="25%"><br>
-3、（需连接手表）点击ADB Sideload<br>
-<img src="//cdn.xrzyun.top/img/gridea_4.jpg" width="25%"><br>
-4、滑动开启此模式<br>
-5、连接手表，打开搞机助手<a href="https://lsdy.lanzous.com/b0bwa7gif">[下载]</a><br>
-6、连接成功，点击 恢复模式<br>
-<img src="//cdn.xrzyun.top/img/gridea_5.PNG" width="35%"><br>
-7、点击Sideload 刷机模式<br>
-<img src="//cdn.xrzyun.top/img/gridea_6.PNG" width="35%"><br>
-8、选择刷机包，<a href="https://xrzyun.coding.net/api/share/download/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">Magisk-20.4(20400).zip</a>，开始刷机，跑完之后，重启手表，成功<br>
-<img src="//cdn.xrzyun.top/img/gridea_7.PNG" width="35%"></p>
+                <p><strong>刷机有风险，玩机需谨慎。如果变砖作者概不负责。</strong></p>
+<h2 id="条件">条件</h2>
+<p>聪明的脑子、灵活的双手、会用QFIL<a href="https://wearandme.com:8888/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.7z">[下载]</a><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%95%99%E7%A8%8B">[教程]</a>、刷过sboot<a href="https://coding-net-production-file-1257242599.cos.ap-shanghai.myqcloud.com/2c8adea0-cf3b-11ea-abb4-3ba29736327b.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDay83lFmaS6Y4LTdzMVO1SdZOyJSNOYpr%26q-sign-time%3D1595766416%3B1595770016%26q-key-time%3D1595766416%3B1595770016%26q-header-list%3D%26q-url-param-list%3Dresponse-content-disposition%3Bresponse-expires%26q-signature%3D80b6cd415e05cc18bd401cb365ccb7f0da15fb71&amp;response-content-disposition=attachment%3Bfilename%3DXTC-SBoot-RV1.5.zip&amp;response-expires=Wed%2C%2029%20Jul%202020%2000%3A26%3A56%20GMT">[下载]</a>。</p>
+<h2 id="提取固件已有固件可忽略">提取固件（已有固件可忽略）</h2>
+<p>1、（移除root，升级至最新固件）<br>
+2、连接电脑，打开QFIL，9008模式提取system分区（和userdata分区）<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%8F%90%E5%8F%96%E5%88%86%E5%8C%BA">[提取方法]</a></p>
+<h2 id="正式开工">正式开工</h2>
+<p>3、进9008，回到可刷sboot的版本，刷入sboot.img和recovery.img<a href="https://xrzyun.coding.net/api/share/download/4661641d-9490-4dac-aeda-f488e7f1ef44">[下载]</a>（和备份的       userdata.bin）[不会刷看<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%95%99%E7%A8%8B">教程</a>]<br>
+(4、回到系统，输入<code>adb reboot recovery</code>确认能进入rec)<br>
+5、9008刷之前提取的system.bin<br>
+6、开机查看：新系统和magisk都在</p>
+<h2 id="其它">其它</h2>
+<p><a href="/post/xtcuproot-Q&A/">可能出现的意外及解决方法</a><br>
+tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
+<h2 id="鸣谢">鸣谢</h2>
+<ul>
+<li><a href="https://www.baidu.com">百度</a></li>
+<li><a href="https://e.coding.net">Coding</a>
+<ul>
+<li>文件网盘</li>
+<li>Coding Pages</li>
+</ul>
+</li>
+<li>作者<a href="https://www.xrzyun.top">xrz</a></li>
+<li>写作于 <a href="https://gridea.dev">Gridea</a></li>
+</ul>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E5%BC%80%E6%9C%BA%E5%90%8E%E6%8E%89root%E4%BA%86">开机后掉root了</a>
+<li>
 <ul>
-<li><a href="#%E6%96%B9%E6%B3%951">方法1</a></li>
-<li><a href="#%E6%96%B9%E6%B3%952">方法2</a></li>
+<li><a href="#%E6%9D%A1%E4%BB%B6">条件</a></li>
+<li><a href="#%E6%8F%90%E5%8F%96%E5%9B%BA%E4%BB%B6%E5%B7%B2%E6%9C%89%E5%9B%BA%E4%BB%B6%E5%8F%AF%E5%BF%BD%E7%95%A5">提取固件（已有固件可忽略）</a></li>
+<li><a href="#%E6%AD%A3%E5%BC%8F%E5%BC%80%E5%B7%A5">正式开工</a></li>
+<li><a href="#%E5%85%B6%E5%AE%83">其它</a></li>
+<li><a href="#%E9%B8%A3%E8%B0%A2">鸣谢</a></li>
 </ul>
 </li>
 </ul>
@@ -158,9 +160,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://blog.xrzyun.top/post/hello-gridea/">
+            <a href="https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/">
               <h3 class="post-title">
-                Hello Gridea
+                可能出现的意外及解决方法（建议看完全部再开始）
               </h3>
             </a>
           </div>
