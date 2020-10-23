@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xrzyun.top</id>
     <title>xrz-blog</title>
-    <updated>2020-10-05T10:56:25.719Z</updated>
+    <updated>2020-10-23T11:59:06.988Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xrzyun.top"/>
     <link rel="self" href="https://blog.xrzyun.top/atom.xml"/>
@@ -11,9 +11,30 @@
     <icon>https://blog.xrzyun.top/favicon.ico</icon>
     <rights>All rights reserved 2020, xrz-blog</rights>
     <entry>
+        <title type="html"><![CDATA[XTC文件]]></title>
+        <id>https://blog.xrzyun.top/post/XTC-Files/</id>
+        <link href="https://blog.xrzyun.top/post/XTC-Files/">
+        </link>
+        <updated>2020-10-23T09:44:09.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>文件收集于互联网，使用过程中出错作者概不负责。</strong></p>
+<h3 id="小天才z系列超级恢复">小天才Z系列超级恢复</h3>
+<p>地址：http://mirrors.fatfish.top:8650/index.php?share/folder&amp;user=1&amp;sid=jJCvVb8Q<br>
+密码：<code>WearBBS</code><br>
+技术支持、服务器提供：WearBBS.cn</p>
+<h3 id="教程">教程</h3>
+<p>地址：<a href="https://xrzcloud-my.sharepoint.com/:f:/g/personal/xrz_xrzyun_ml/Egv6_OsR4bNNs5n0axaIAQoBwXBJ49-8zx1-mOJgGCVJrQ?e=uITH0v">xrzcloud by OneDrive://xrzcloud/share/XTC文件/通用/教程汇总/</a><br>
+密码：<code>xrz-cloud</code><br>
+PPT可以直接打开，部分里面有下载链接。</p>
+<h3 id="小天才sbootroot一切高级教程之基础">小天才SBoot[root][一切高级教程之基础]</h3>
+<p>地址：<a href="https://xrzcloud-my.sharepoint.com/:u:/g/personal/xrz_xrzyun_ml/EWfuZuTm4b1Bng7TN7HXVBMBevDbtKSTkr2yOh7sMkINLQ?e=evXylY">xrzcloud by OneDrive://xrzcloud/share/XTC文件/通用/</a></p>
+<h3 id="xtc文件库">XTC文件库</h3>
+<p>地址：[xrzcloud by OneDrive://xrzcloud/share/XTC文件/]</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[XTC任意版本root方法]]></title>
-        <id>https://blog.xrzyun.top/xtc-root/</id>
-        <link href="https://blog.xrzyun.top/xtc-root/">
+        <id>https://blog.xrzyun.top/post/xtc-root/</id>
+        <link href="https://blog.xrzyun.top/post/xtc-root/">
         </link>
         <updated>2020-10-03T12:30:30.000Z</updated>
         <content type="html"><![CDATA[<p><strong>刷机有风险，玩机需谨慎。如果变砖作者概不负责。</strong></p>
@@ -46,8 +67,8 @@ tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[可能出现的意外及解决方法（建议看完全部再开始）]]></title>
-        <id>https://blog.xrzyun.top/xtcuproot-Q&amp;A/</id>
-        <link href="https://blog.xrzyun.top/xtcuproot-Q&amp;A/">
+        <id>https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/</id>
+        <link href="https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/">
         </link>
         <updated>2020-07-26T13:01:53.000Z</updated>
         <content type="html"><![CDATA[<h1 id="开机后掉root了">开机后掉root了</h1>
@@ -79,8 +100,8 @@ tips：作者z5q测试成功，其他机型请自测。（图有空再补）</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.xrzyun.top/hello-gridea/</id>
-        <link href="https://blog.xrzyun.top/hello-gridea/">
+        <id>https://blog.xrzyun.top/post/hello-gridea/</id>
+        <link href="https://blog.xrzyun.top/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
