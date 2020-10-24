@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xrzyun.top</id>
     <title>xrz-blog</title>
-    <updated>2020-10-23T11:59:06.988Z</updated>
+    <updated>2020-10-24T04:33:04.075Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xrzyun.top"/>
     <link rel="self" href="https://blog.xrzyun.top/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://blog.xrzyun.top/images/avatar.png</logo>
     <icon>https://blog.xrzyun.top/favicon.ico</icon>
     <rights>All rights reserved 2020, xrz-blog</rights>
+    <entry>
+        <title type="html"><![CDATA[白嫖无限空间]]></title>
+        <id>https://blog.xrzyun.top/post/白嫖OneDrive/</id>
+        <link href="https://blog.xrzyun.top/post/白嫖OneDrive/">
+        </link>
+        <updated>2020-10-23T14:05:37.000Z</updated>
+        <content type="html"><![CDATA[<p>OneDrive E5白嫖，无限空间，已经挂了脚本，续了1次。<br>
+还有20多个名额。<br>
+请在评论区留言。</p>
+<h3 id="格式">格式</h3>
+<pre><code>前缀：xrz
+邮箱：xxx@qq.com
+</code></pre>
+<p>把账号<code>xrz@xrzyun.ml</code>和密码发到你的邮箱<code>xxx@qq.com</code>里。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[XTC文件]]></title>
         <id>https://blog.xrzyun.top/post/XTC-Files/</id>
@@ -28,7 +44,13 @@ PPT可以直接打开，部分里面有下载链接。</p>
 <h3 id="小天才sbootroot一切高级教程之基础">小天才SBoot[root][一切高级教程之基础]</h3>
 <p>地址：<a href="https://xrzcloud-my.sharepoint.com/:u:/g/personal/xrz_xrzyun_ml/EWfuZuTm4b1Bng7TN7HXVBMBevDbtKSTkr2yOh7sMkINLQ?e=evXylY">xrzcloud by OneDrive://xrzcloud/share/XTC文件/通用/</a></p>
 <h3 id="xtc文件库">XTC文件库</h3>
-<p>地址：[xrzcloud by OneDrive://xrzcloud/share/XTC文件/]</p>
+<p>地址：<a href="https://xrzcloud-my.sharepoint.com/:f:/g/personal/xrz_xrzyun_ml/Emt5Hlro2m9Kh-st6QgeRAoB7lIp7Ez3VLQwy3OGr2Jgrg?e=2wCZuh">xrzcloud by OneDrive://xrzcloud/share/XTC文件/</a><br>
+密码：<code>xrzcloud-XTC</code></p>
+<h3 id="高速下载链接有空时可代下载文件">高速下载链接（有空时可代下载文件）</h3>
+<p>地址：https://xrzyun.coding.net/p/xrz-video/files/all/21464426<br>
+账号：***<br>
+密码：***<br>
+请联系作者QQ小号获取：1937019695</p>
 ]]></content>
     </entry>
     <entry>
@@ -37,12 +59,13 @@ PPT可以直接打开，部分里面有下载链接。</p>
         <link href="https://blog.xrzyun.top/post/xtc-root/">
         </link>
         <updated>2020-10-03T12:30:30.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>刷机有风险，玩机需谨慎。如果变砖作者概不负责。</strong></p>
+        <content type="html"><![CDATA[<p><strong>刷机有风险，玩机需谨慎。如果变砖作者概不负责。</strong><br>
+<a href="/post/XTC-Files/">XTC文件库</a>(失效文件链接请到这里面找)</p>
 <h2 id="条件">条件</h2>
-<p>聪明的脑子、灵活的双手、会用QFIL<a href="https://wearandme.com:8888/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.7z">[下载]</a><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%95%99%E7%A8%8B">[教程]</a>、刷过sboot<a href="https://coding-net-production-file-1257242599.cos.ap-shanghai.myqcloud.com/2c8adea0-cf3b-11ea-abb4-3ba29736327b.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDay83lFmaS6Y4LTdzMVO1SdZOyJSNOYpr%26q-sign-time%3D1595766416%3B1595770016%26q-key-time%3D1595766416%3B1595770016%26q-header-list%3D%26q-url-param-list%3Dresponse-content-disposition%3Bresponse-expires%26q-signature%3D80b6cd415e05cc18bd401cb365ccb7f0da15fb71&amp;response-content-disposition=attachment%3Bfilename%3DXTC-SBoot-RV1.5.zip&amp;response-expires=Wed%2C%2029%20Jul%202020%2000%3A26%3A56%20GMT">[下载]</a>。</p>
+<p>聪明的脑子、灵活的双手、会用QFIL<a href="https://wearandme.com:8888/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/QFIL%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.7z">[下载]</a><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%95%99%E7%A8%8B">[教程]</a>、刷过sboot<a href="/post/XTC-Files/#xtc%E6%96%87%E4%BB%B6%E5%BA%93">[下载]</a></p>
 <h2 id="提取固件已有固件可忽略">提取固件（已有固件可忽略）</h2>
 <p>1、（移除root，升级至最新固件）<br>
-2、连接电脑，打开QFIL，9008模式提取system分区（和userdata分区）<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%8F%90%E5%8F%96%E5%88%86%E5%8C%BA">[提取方法]</a></p>
+2、连接电脑，打开QFIL，9008模式提取system分区<s>和userdata分区</s><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%8F%90%E5%8F%96%E5%88%86%E5%8C%BA">[提取方法]</a></p>
 <h2 id="正式开工">正式开工</h2>
 <p>3、进9008，回到可刷sboot的版本，刷入sboot.img和recovery.img<a href="https://xrzyun.coding.net/api/share/download/4661641d-9490-4dac-aeda-f488e7f1ef44">[下载]</a>（和备份的       userdata.bin）[不会刷看<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;tn=baidu&amp;wd=QFIL%E6%95%99%E7%A8%8B">教程</a>]<br>
 (4、回到系统，输入<code>adb reboot recovery</code>确认能进入rec)<br>
