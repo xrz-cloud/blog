@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>可能出现的意外及解决方法（建议看完全部再开始） | xrz-blog</title>
+<title>MX播放器使用方法 | xrz-blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1604817299905">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -48,8 +48,8 @@
 </script>
 
 
-  <meta name="description" content="可能出现的意外及解决方法（建议看完全部再开始）" />
-  <meta name="keywords" content="技术,XTC,刷机" />
+  <meta name="description" content="MX播放器使用方法" />
+  <meta name="keywords" content="番剧" />
 </head>
 
 <body>
@@ -213,8 +213,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -262,196 +261,6 @@
   </div>
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#%E5%BC%80%E6%9C%BA%E5%90%8E%E6%8E%89root%E4%BA%86">开机后掉root了</a>
-<ul>
-<li><a href="#%E6%96%B9%E6%B3%951">方法1</a></li>
-<li><a href="#%E6%96%B9%E6%B3%952">方法2</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -539,8 +348,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/">
-      可能出现的意外及解决方法（建议看完全部再开始）
+    <a class="post-title-link" href="https://blog.xrzyun.top/post/MX-Player_way/">
+      MX播放器使用方法
     </a>
   </h1>
   <div class="post-meta">
@@ -548,7 +357,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-07-26 21:01:53">2020-07-26</span>
+      <span class="publish-time" data-t="2020-11-08 14:11:34">2020-11-08</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -557,20 +366,8 @@
       <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
-      <a href="https://blog.xrzyun.top/tag/Lzef0gJJ7/">
-        <span>技术</span>
-      </a>、
-      
-      
-      
-      <a href="https://blog.xrzyun.top/tag/5XCWDRDb2/">
-        <span>XTC</span>
-      </a>、
-      
-      
-      
-      <a href="https://blog.xrzyun.top/tag/ib8V_DkxZ/">
-        <span>刷机</span>
+      <a href="https://blog.xrzyun.top/tag/bangumi/">
+        <span>番剧</span>
       </a>
       
       
@@ -579,17 +376,17 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>0<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>159<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>0<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/xtcuproot-Q&amp;A/" data-flag-title="可能出现的意外及解决方法（建议看完全部再开始）" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/MX-Player_way/" data-flag-title="MX播放器使用方法" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -598,32 +395,7 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <h1 id="开机后掉root了">开机后掉root了</h1>
-<p><a href="#%E6%96%B9%E6%B3%951">方法1</a> <a href="#%E6%96%B9%E6%B3%952">方法2</a></p>
-<h2 id="方法1">方法1</h2>
-<p>1、输入<code>adb reboot recovery</code>进入rec<br>
-<img src="//cdn.xrzyun.top/img/gridea_1.jpg" width="25%"><br>
-2、点击   Install<br>
-<img src="//cdn.xrzyun.top/img/gridea_2.jpg" width="25%"><br>
-3、（需提前把<a href="https://xrzyun.coding.net/api/share/download/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">Magisk-20.4(20400).zip</a>导入/sdcard/）点击Install Zip<br>
-<img src="//cdn.xrzyun.top/img/gridea_3.jpg" width="25%"><br>
-4、在列表中找到magisk的zip，点击滑动刷入，跑完之后，重启手表，成功</p>
-<h2 id="方法2">方法2</h2>
-<p>1、输入<code>adb reboot recovery</code>进入rec<br>
-<img src="//cdn.xrzyun.top/img/gridea_1.jpg" width="25%"><br>
-2、点击   Install<br>
-<img src="//cdn.xrzyun.top/img/gridea_2.jpg" width="25%"><br>
-3、（需连接手表）点击ADB Sideload<br>
-<img src="//cdn.xrzyun.top/img/gridea_4.jpg" width="25%"><br>
-4、滑动开启此模式<br>
-5、连接手表，打开搞机助手<a href="https://lsdy.lanzous.com/b0bwa7gif">[下载]</a><br>
-6、连接成功，点击 恢复模式<br>
-<img src="//cdn.xrzyun.top/img/gridea_5.PNG" width="35%"><br>
-7、点击Sideload 刷机模式<br>
-<img src="//cdn.xrzyun.top/img/gridea_6.PNG" width="35%"><br>
-8、选择刷机包，<a href="https://xrzyun.coding.net/api/share/download/6ab049e5-ae03-4477-8ad4-3c16a523dc4e">Magisk-20.4(20400).zip</a>，开始刷机，跑完之后，重启手表，成功<br>
-<img src="//cdn.xrzyun.top/img/gridea_7.PNG" width="35%"></p>
-
+              <iframe src="https://80euxw.coding-pages.com/demo/" width="270" height="470"></iframe>
             </div>
             
             
@@ -635,7 +407,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/" title="可能出现的意外及解决方法（建议看完全部再开始）">https://blog.xrzyun.top/post/xtcuproot-Q&amp;A/</a>
+      <a href="https://blog.xrzyun.top/post/MX-Player_way/" title="MX播放器使用方法">https://blog.xrzyun.top/post/MX-Player_way/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -644,26 +416,14 @@
   </ul>
   <div class="tags">
     
-      <a href="https://blog.xrzyun.top/tag/Lzef0gJJ7/"># 技术</a>
-    
-      <a href="https://blog.xrzyun.top/tag/5XCWDRDb2/"># XTC</a>
-    
-      <a href="https://blog.xrzyun.top/tag/ib8V_DkxZ/"># 刷机</a>
+      <a href="https://blog.xrzyun.top/tag/bangumi/"># 番剧</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="XTC任意版本root方法" href="https://blog.xrzyun.top/post/xtc-root/">XTC任意版本root方法</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="XTC任意版本root方法" href="https://blog.xrzyun.top/post/xtc-root/">上一篇</a>
-      
     </div>
     <div class="nav-next">
-      
-        <a class="nav-pc-next" title="Hello Gridea" href="https://blog.xrzyun.top/post/hello-gridea/">Hello Gridea</a>
-        <a class="nav-mobile-next" title="Hello Gridea" href="https://blog.xrzyun.top/post/hello-gridea/">下一篇</a>
-        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
