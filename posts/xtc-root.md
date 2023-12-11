@@ -38,7 +38,5 @@ author: xrz
 
 ## 其它
 
-[可能出现的意外及解决方法](/blog/xtcuproot-Q&A)
+[可能出现的意外及解决方法](./xtcuproot-Q&A)  
 Tips：作者 z5q 测试成功，其他机型请自测。（图有空再补）
-
-<CR />
