@@ -28,3 +28,7 @@ PPT 可以直接打开，部分里面有下载链接。
 
 地址： [xrzcloud by OneDrive://xrzcloud/share/XTC 文件/](https://xrzcloud-my.sharepoint.com/:f:/g/personal/xrz_xrzyun_ml/Emt5Hlro2m9Kh-st6QgeRAoB7lIp7Ez3VLQwy3OGr2Jgrg?e=2wCZuh)  
 密码： `xrzcloud-XTC`
+
+# LICENSE 版权声明
+
+本博客所有文章除特别声明外，均采用[BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可协议。转载请注明出处！

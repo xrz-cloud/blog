@@ -38,3 +38,7 @@ author: xrz
 
 8. 选择刷机包，Magisk-20.4(20400).zip，开始刷机，跑完之后，重启手表，成功
    ![img7](https://cfcdn.coding.xrzyun.top/img/gridea_7.PNG)
+
+# LICENSE 版权声明
+
+本博客所有文章除特别声明外，均采用[BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可协议。转载请注明出处！
